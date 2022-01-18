@@ -8,7 +8,7 @@
     "start": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Bartek & Bartek",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.15"
