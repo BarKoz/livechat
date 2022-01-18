@@ -2,20 +2,20 @@ import express from "express";
 
 const router = express.Router();
 
-router.post('/register', (req, res) => {
-    res.send('register');
+router.get('/login', (req, res) => {
+    res.send('login page');
 })
 
-router.post('/login', (req, res) => {
-    res.send('login');
+router.post('/register', (req, res) => {
+    res.send('register user');
 })
 
 router.delete('/delete', (req, res) => {
-    res.send('delete');
+    res.send('deleted user');
 })
 
 router.put('/update', (req, res) => {
-    res.send('update');
+    res.send('update user');
 })
 
-export default router;
+export { router };
