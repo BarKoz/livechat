@@ -1,11 +1,11 @@
 import express from "express";
 import "dotenv/config.js";
-import home from "./routes/home";
-import user from "./routes/user";
+import { router as homeRoutes } from "./routes/home.js";
+import { router as userRoutes } from "./routes/user.js";
 const app = express();
 
-app.use(home);
-app.use(user);
+app.use(homeRoutes);
+app.use(userRoutes);
 app.use(
   express.urlencoded({
     extended: true,
