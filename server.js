@@ -1,7 +1,11 @@
 import express from "express";
 import "dotenv/config.js";
+import home from "./routes/home";
+import user from "./routes/user";
 const app = express();
 
+app.use(home);
+app.use(user);
 app.use(
   express.urlencoded({
     extended: true,
